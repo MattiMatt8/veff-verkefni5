@@ -9,11 +9,14 @@
 <body>
 <h1>Verkefni 5</h1>
 <div class="container">
+	%import datetime
 	%for atridi in data['results']:
 	<div class="box">
+		%date = datetime.datetime.strptime(atridi['dateOfShow'], '%Y-%m-%dT%H:%M:%S')
+		%date2 = date.strftime('%H:%M | %d/%m/%Y')
 		<h2>{{atridi['eventDateName']}}</h2>
 		<h4>{{atridi['eventHallName']}}</h4>
-		<h4>{{atridi['dateOfShow']}}</h4>
+		<h4>{{date2}}</h4>
 		<img src="{{atridi['imageSource']}}">
 	</div>
 	%end
