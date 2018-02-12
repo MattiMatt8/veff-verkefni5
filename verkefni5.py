@@ -28,5 +28,5 @@ def villa500(error):
     <a href="/">Til Baka</a>
     '''
 
-#run(host="0.0.0.0", port=os.environ.get('PORT'))
-run(host='localhost', port=8080, debug=True, reloader=True)
+run(host="0.0.0.0", port=os.environ.get('PORT'))
+#run(host='localhost', port=8080, debug=True, reloader=True)
