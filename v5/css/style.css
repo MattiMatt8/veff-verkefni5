@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+	font-family: cursive;
+	font-size: 35px;
+}
+.container{
+	display: flex;
+	width: 100%;
+	max-width: 80em;
+	flex-flow: row wrap;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	font-family: arial;
+}
+.box{
+	border: 2px solid #000;
+	margin: 15px 0;
+	padding: 20px 25px;
+	max-width: 19em;
+	width: 100%;
+}
+.box img{
+	width: 100%;
+}
+h2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	margin-top: 5px;
+	height: 55px;
+}
+h4{
+	margin: 15px 0;
+	text-align: center;
+}
